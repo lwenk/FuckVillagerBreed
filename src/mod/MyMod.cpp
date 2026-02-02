@@ -11,6 +11,7 @@ MyMod& MyMod::getInstance() {
 
 bool MyMod::load() {
     getSelf().getLogger().debug("Loading...");
+    hook::hook();
     // Code for loading the mod goes here.
     return true;
 }
